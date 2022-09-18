@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:id="@+id/RelativeLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:id="@+id/Red"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/RedSeekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Red"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:id="@+id/Green"
+        android:layout_below="@+id/RedSeekBar"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/GreenSeekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Green"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        android:id="@+id/Blue"
+        android:layout_below="@+id/GreenSeekBar"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/BlueSeekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Blue"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
